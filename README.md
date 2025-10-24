@@ -234,33 +234,29 @@ void assert_failed(uint8_t *file, uint32_t line)
 ```
 FOR PULSE AT 5000
 
-TON = 3 * 0.1ms = 0.3
-TOFF = 3 * 0.1ms = 0.3
+TON = 3 * 0.1ms = 0.3ms
+TOFF = 3 * 0.1ms = 0.3ms
 TOTAL TIME = TON + TOFF = 0.3 + 0.3 = 0.6ms
-FREQUENCY = 1/(TOTAL TIME) = 1/(0.6x10^-3) = 1.667*10^3khz
-DUTY CYCLE = TON/TOTAL TIME = 0.3/0.6 = 0.5
-%DUTY CYCLE = 0.5*100 = 50%
+FREQUENCY = 1 / (TOTAL TIME) = 1 / (0.6*10^-3) = 1.667*10^3 = 1.67khz
+DUTY CYCLE = (TON / TOTAL TIME) * 100 = 0.3/0.6 = 50%
 
 
 FOR PULSE AT 7000
 
-TON = 3 * 0.1ms = 0.3
-TOFF = 3 * 0.1ms = 0.3
-TOTAL TIME = TON + TOFF = 0.3 + 0.3 = 0.6ms
-FREQUENCY = 1/(TOTAL TIME) = 1/(0.6x10^-3) = 1.667*10^3khz
-DUTY CYCLE = TON/TOTAL TIME = 0.3/0.6 = 0.5
-%DUTY CYCLE = 0.5*100 = 50%
-
+TON = 4.3 * 0.1ms = 0.43ms
+TOFF = 1.7 * 0.1ms = 0.17ms
+TOTAL TIME = TON + TOFF = 0.43 + 0.17 = 0.6ms
+FREQUENCY = 1 / (TOTAL TIME) = 1 / (0.6*10^-3) = 1.667*10^3 = 1.67khz
+DUTY CYCLE = (TON / TOTAL TIME) * 100 = (0.43 / 0.6) * 100 = 71.7%
 
 
 FOR PULSE AT 9000
 
-TON = 3 * 0.1ms = 0.3
-TOFF = 3 * 0.1ms = 0.3
-TOTAL TIME = TON + TOFF = 0.3 + 0.3 = 0.6ms
-FREQUENCY = 1/(TOTAL TIME) = 1/(0.6x10^-3) = 1.667*10^3khz
-DUTY CYCLE = TON/TOTAL TIME = 0.3/0.6 = 0.5
-%DUTY CYCLE = 0.5*100 = 50%
+TON = 5.5 * 0.1ms = 0.55ms
+TOFF = 0.5 * 0.1ms = 0.05ms
+TOTAL TIME = TON + TOFF = 0.55 + 0.05 = 0.6ms
+FREQUENCY = 1 / (TOTAL TIME) = 1 / (0.6*10^-3) = 1.667*10^3 = 1.67khz
+DUTY CYCLE = (TON / TOTAL TIME) * 100 = (0.55 / 0.6) * 100 = 91.7%
 ```
 
 ## Result :

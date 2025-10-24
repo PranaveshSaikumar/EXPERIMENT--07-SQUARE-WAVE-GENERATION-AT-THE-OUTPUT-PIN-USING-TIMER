@@ -233,25 +233,33 @@ void assert_failed(uint8_t *file, uint32_t line)
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
 FOR PULSE AT 5000
 
-TON = 0.3
-TOFF = 0.3
-TOTAL TIME = 0.6
-FREQUENCY = 1/(0.6) = 1.66 
+TON = 3 * 0.1ms = 0.3
+TOFF = 3 * 0.1ms = 0.3
+TOTAL TIME = TON + TOFF = 0.3 + 0.3 = 0.6ms
+FREQUENCY = 1/(TOTAL TIME) = 1/(0.6x10^-3) = 1.667*10^3khz
+DUTY CYCLE = TON/TOTAL TIME = 0.3/0.6 = 0.5
+%DUTY CYCLE = 0.5*100 = 50%
+
 
 FOR PULSE AT 7000
 
-TON = 0.4
-TOFF = 0.2
-TOTAL TIME = 0.6
-FREQUENCY = 1/(0.6) = 1.66
+TON = 3 * 0.1ms = 0.3
+TOFF = 3 * 0.1ms = 0.3
+TOTAL TIME = TON + TOFF = 0.3 + 0.3 = 0.6ms
+FREQUENCY = 1/(TOTAL TIME) = 1/(0.6x10^-3) = 1.667*10^3khz
+DUTY CYCLE = TON/TOTAL TIME = 0.3/0.6 = 0.5
+%DUTY CYCLE = 0.5*100 = 50%
+
 
 
 FOR PULSE AT 9000
 
-TON = 0.55
-TOFF = 0.05
-TOTAL TIME = 0.6
-FREQUENCY = 1/(0.6) = 1.66
+TON = 3 * 0.1ms = 0.3
+TOFF = 3 * 0.1ms = 0.3
+TOTAL TIME = TON + TOFF = 0.3 + 0.3 = 0.6ms
+FREQUENCY = 1/(TOTAL TIME) = 1/(0.6x10^-3) = 1.667*10^3khz
+DUTY CYCLE = TON/TOTAL TIME = 0.3/0.6 = 0.5
+%DUTY CYCLE = 0.5*100 = 50%
 
 
 ## Result :

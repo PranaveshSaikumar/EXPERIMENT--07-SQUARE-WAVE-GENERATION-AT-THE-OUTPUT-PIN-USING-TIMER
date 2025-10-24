@@ -238,7 +238,7 @@ TON = 3 * 0.1ms = 0.3ms
 TOFF = 3 * 0.1ms = 0.3ms
 TOTAL TIME = TON + TOFF = 0.3 + 0.3 = 0.6ms
 FREQUENCY = 1 / (TOTAL TIME) = 1 / (0.6*10^-3) = 1.667*10^3 = 1.67kHz
-DUTY CYCLE = (TON / TOTAL TIME) * 100 = 0.3/0.6 = 50%
+DUTY CYCLE = (TON / TOTAL TIME) * 100 = (0.3 / 0.6) * 100 = 50%
 
 
 FOR PULSE AT 7000
